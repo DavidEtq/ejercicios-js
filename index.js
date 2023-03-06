@@ -37,6 +37,7 @@ const books = [
 ];
 
 function isBookRead(books, titleToSearch) {
+  // return books.some((book) => book.title === titleToSearch && book.isRead);
   return books.find(book => book.title === titleToSearch)?.isRead ?? false;
 }
 console.log(isBookRead(books, "Canción de hielo y fuego"))
